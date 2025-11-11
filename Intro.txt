@@ -1,0 +1,76 @@
+Intro to node.js 
+
+1) In 2009 the software engineer known as ryan dajl from the US created node.js
+
+2) JS was only used in browsers. 
+
+3) servers were buil usign php, puthon or java 
+
+4) each request on server would create a new thread,consuming memory and slowing things down under heavy load. 
+
+5) rayan found this ineffecient especially after seeing how web browsers handled asynchronous events 
+
+6) he wanted the same non blocking behviour on the server, that how node.js was born to bring JS to the backend but in a faster and more scalable way 
+
+The core idea event driven and non blocking i/o 
+
+The node.js used the follwoing to make the node.js 
+
+1) google V8 engine (the same engine that powers chrome)
+
+2) ibuv (a c library for asynchronous i?O)
+
+this combinations allowed node.js to 
+
+1) handled many requests at once using a single thread 
+
+2) avoid blocking while waiting for tasks like file reading or database queries
+
+3) node.js introduced a single threaded, event driven architectrue that made servers lightweight and fast
+
+Early stages
+
+1) node.js was relaeased at JSCong EU conference in 2009
+2) Node package manager (npm) was introdueced the game changer, developers could easily install and share resusable packages in 2010 
+3)companies like linkedin and uber started using node.js for their backends due to it's speed and scalability
+
+eg:- likedln moved from ruby on rails to node.js and saw their servers 
+handle 10x more traffic with fewer machines 
+
+winter of node.js 
+
+1) node.js rapidly became the go to choice for building 
+/ api 
+/real time applications 
+/caommand line tools 
+/developers utilites 
+
+big companies 
+netflix for streaming 
+payapl for faster apis 
+ebay, wlamart and NASA adopted node.js in production 
+
+however, around 2014, there was community tension- development was slow and contributors were frustrated
+
+Todays ecosystem 
+
+1) the node.js ecosystem is massive 
+
+/ over 2 million packages on npm 
+/ used by 90% of modern web developers
+/ foundation for frameworkds like express.js, fastify and adonisjs 
+it's no longer "just  JS on the server"
+it's the backbone of the modern web, connecting api, microservices and tools
+
+time line 
+
+year                events          
+2009                 created node.js 
+2010                 npm is lauched 
+2011                 likedin and uber shifted 
+2014                 io.js fork due to governance issues 
+2015                 io.js merges back-> nodes.js foundation formed 
+2017                 async/await, ES modules and mahor improvement
+2020s                node.js becomes a global standard for web servers 
+
+
