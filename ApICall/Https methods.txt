@@ -1,0 +1,72 @@
+HHTTp methods tell the server what action the client wants to perfmr 
+
+1) get 
+used to featch data 
+no body 
+safe an indempotent 
+eg:- get al list of users 
+
+2) post 
+used to create something 
+sends data in body 
+egL- register a new user 
+
+3) put
+used to replace and update full record 
+idempotenet (same request = same result )
+eg:- update entire user data 
+
+4) patch 
+used to update paritally 
+modify only selected fileds 
+eg:- update only users name 
+
+5) delete 
+remove a resource 
+eg:- delete user by id
+
+6) options 
+used in cors 
+browser checks what methods are allowed 
+
+Common HTTP status codes with quick meaning 
+
+1) 1xx informational 
+
+100 continues = server is ready for request body 
+101 switching protocols = upgrading to websocket
+
+
+2) 2xx  sucess 
+
+200 ok = request sucessful 
+201 created = new resourcecreated (post)
+202 accepted = preocessing but not completed 
+204 no content = sucessbut no response body *(delete/put)
+
+
+3) 3xx redirection
+
+301 moved permanently = new url 
+302 found (temporary redirect)
+304 not modified = use cached content 
+
+
+4) 4xx slients errors 
+
+400 bad request = wrong imput/body 
+401 unauthorised = non/ invalid token 
+403 forbidden = you are not allowed 
+404 not found = resource not found 
+405 mehtod not allowed = wrong http method 
+409 conflict = duplicate record data conflict 
+429 too many request = rate limit exceed 
+
+
+5) 5xxx server error 
+
+500 internal server erro = somthing crashed 
+501 not implemented = mehtod not supported 
+502 bad gateway = server upstream failed 
+503 service unavaillabe = server down/ overloaded 
+504 gateway timeout = upstream look too long 

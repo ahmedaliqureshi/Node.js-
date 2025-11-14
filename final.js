@@ -1,3 +1,4 @@
+import { rename } from "fs";
 import fs from "fs/promises"
 async function allMethods(){
     try {
@@ -19,12 +20,30 @@ async function allMethods(){
 
         // 3rd we are goign to create the file
         await fs.writeFile(fileName,fileContent); 
-        console.log()
-    
-  
+        console.log('file is created');
 
+        //4th read file 
+        let output= await fs.readFile(fileNam,"utf-8");
+        console.log(output);
+
+        // 5th rename file 
+        await fs.reNameFile(fileNam,reNameFile);
+        console.log('file renamed');
+
+        // 6h delete file 
+        await fs.unlink(reNameFile); 
+        console.log('file deleted');
+
+        //7th list files
+        await fs.readdir(filePathsLS);
+        console.log('lsit');
+
+        //8th update file 
+        await fs.appendFile(fileName, '\n hello hi bye');
+        console.log('file updated');
 
     } catch (error) {
         console.log(error);
     }
-}
+}   
+allMethods();
