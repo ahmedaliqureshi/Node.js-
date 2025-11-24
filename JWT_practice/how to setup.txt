@@ -1,0 +1,13 @@
+setup before writing any program in node js 
+
+step -0:- open the folder and run the following commands in terminal 
+
+step-1:- npm i -y is done 1st to set the env for npm packages 
+
+step-2:- npm jsonwebtoken is downloaded to use it in our program 
+
+step-3:- npm modele to install all the packages 
+
+step-4:- create an gitignore file to wite the name of the files which 
+are not going to be pushed
+
