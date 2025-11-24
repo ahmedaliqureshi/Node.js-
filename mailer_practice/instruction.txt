@@ -1,0 +1,12 @@
+1 step:- we are going to create the folder 
+
+2 step:- then we are going to npm install -y 
+
+3 step:- then we are goin to npm init -y which will install json package
+
+4 step:- then we are going to npm install nodemailer package 
+
+5 step:- then we are going to npm install dotenv  and create and file as well 
+
+6 step:- create an .gitignore file to hide the sensitve data
+
